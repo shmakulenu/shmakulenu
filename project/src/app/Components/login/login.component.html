@@ -1,0 +1,36 @@
+<mat-card>  
+    <mat-card-content >
+        <form [formGroup]="formData">
+            <table *ngIf="user==null">
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="userName" matInput placeholder=":שם משתמש">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!formData.get('userName').valid && formData.get('userName').touched">הכנס שם
+                                משתמש</span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input type="password" formControlName="password" matInput placeholder=":סיסמה">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!formData.get('password').valid && formData.get('password').touched">הכנס
+                                סיסמה</span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="content-center">
+                        <button mat-raised-button color="accent" (click)="GetUserByNameAndPassword()">  <-- </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <!-- <users *ngIf="user!=null" [get-user]="user"></users> -->
+    </mat-card-content>
+</mat-card>

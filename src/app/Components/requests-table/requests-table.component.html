@@ -1,0 +1,58 @@
+<mat-card>
+        <mat-card-title color="accent">
+                <span>רשימת פניות </span>
+        </mat-card-title>
+        <mat-card-content>
+                <!-- כך צריך לעשות עבור כל טבלה אך זה מלא קוד אז אולי לעשות פונקציה בסי שארפ שמאחדת טבלאות -->
+                <tr>
+                        <td>
+                                <!-- מיון לפי פניות בהמתנה -->
+                                <button (click)="showTable(1)" [ngClass]="{'green':toogle1,'regular':!toogle1}" mat-raised-button color="accent"> פניות בהמתנה </button>
+                        </td>
+                        <td>
+                                <!-- מיון לפי פניות שנסגרו -->
+                                <button (click)="showTable(2)" [ngClass]="{'green':toogle2,'regular':!toogle2}" mat-raised-button color="accent"> פניות שנסגרו </button>
+                        </td>
+                        <td>
+                                <!-- מיון לפי פניות 18 -->
+                                <button (click)="showTable(3)" [ngClass]="{'green':toogle3,'regular':!toogle3}" mat-raised-button color="accent"> פניות +18 </button>
+                        </td>
+                </tr>
+                <br>
+                <tr>
+                        <td colspan="2" class="content-center">
+                                <!-- נשלח משתנה בעל ערך  התקבל-4 כדי שבכפתור חזור יחזור לקומפוננטה הזאת -->
+                                <button *ngIf="isShow==true" (click)="goToEmptyStudentTicket()" mat-raised-button color="accent">חדש</button>
+                        </td>
+                </tr>
+                <label>: חיפוש תלמיד לפי ת.ז או שם או טלפון </label>
+                <br>
+                <input type="text" [(ngModel)]="teur">
+                <br>
+
+
+                <table *ngIf="isShow==true" class="table table-hover" matSort (matSortChange)="sortData($event)">
+                        <tr>
+                                <th *ngFor="let c of displayedColumns" [mat-sort-header]="c">
+                                        {{c}}
+                                </th>
+                        </tr>
+                        <!-- <tr *ngFor="let r of requests,let i=index">                            -->
+                        <!-- ,r.StatusId את onSelectRequest לשלוח לפונקציה -->
+                        <tr *ngFor="let r of patients | searchpatient:teur" (click)="onSelectRequest(r.Tz,r.StatusId)">
+                                <td>{{r.Notes}}</td>
+                                <!-- למה הוא לא ממלא את הקופת חולים בטבלה?????????? -->
+                                <td>{{r.KupatCholimName}}</td>
+                                <td>{{r.School}}</td>
+                                <td>{{r.CityName}}</td>
+                                <td>{{r.Address}}</td>
+                                <td>0{{r.Tellephone2}}</td>
+                                <td>0{{r.Tellephone1}}</td>
+                                <td>{{r.date_of_birth}}</td>
+                                <td>{{r.Tz}}</td>
+                                <td>{{r.First_name}}</td>
+                                <td>{{r.RequestDate}}</td>
+                        </tr>
+                </table>
+        </mat-card-content>
+</mat-card>

@@ -1,0 +1,29 @@
+<!-- {{users |json}} -->
+<!-- אפשר להוסיף סינונים לטבלה -->
+<mat-card>
+    <mat-card-title color="accent">
+        <span>רשימת עובדים </span>
+    </mat-card-title>
+    <mat-card-content>
+        <table>
+            <tr>
+                <th *ngFor="let c of displayedColumns">
+                    {{c}}
+                </th>
+            </tr>
+            <!-- (click)="onSelectUser()" -->
+            <tr *ngFor="let u of users">
+                <td>{{u.User_tz}}</td>
+                <td>{{u.Password}}</td>
+                <td>{{u.User_name}}</td>
+                <td>{{u.Last_name}}</td>
+                <td>{{u.SnifId}}</td>
+                <!-- את השדה הזה statusId לא צריך אך צריך להסיר גם את הכותרת      -->
+                <td>{{u.StatusId}}</td>
+                <td>{{u.UserStatusName}}</td>
+            </tr>
+        </table>
+        <button mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShemaKolenuModelStoreContainer" CdmEntityContainer="ShemaKolenuEntities">
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Cities">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="City_Name" ColumnName="City Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Families">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Families">
+        <MappingFragment StoreEntitySet="Families">
+          <ScalarProperty Name="FamilyId" ColumnName="FamilyId" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Father_Name" ColumnName="Father Name" />
+          <ScalarProperty Name="FatherId" ColumnName="FatherId" />
+          <ScalarProperty Name="Mather_Name" ColumnName="Mather Name" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Entry_Date" ColumnName="Entry Date" />
+          <ScalarProperty Name="Kupat_Cholim_id" ColumnName="Kupat Cholim id" />
+          <ScalarProperty Name="SnifId" ColumnName="SnifId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FamilyTelephones">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.FamilyTelephones">
+        <MappingFragment StoreEntitySet="FamilyTelephones">
+          <ScalarProperty Name="Telephone_number" ColumnName="Telephone number" />
+          <ScalarProperty Name="FamilyId" ColumnName="FamilyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Forms">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Forms">
+        <MappingFragment StoreEntitySet="Forms">
+          <ScalarProperty Name="FormId" ColumnName="FormId" />
+          <ScalarProperty Name="ZakautId" ColumnName="ZakautId" />
+          <ScalarProperty Name="Form_Name" ColumnName="Form Name" />
+          <ScalarProperty Name="Form_FileName_Navigation" ColumnName="Form FileName-Navigation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Klinaits">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Klinaits">
+        <MappingFragment StoreEntitySet="Klinaits">
+          <ScalarProperty Name="NumKlinait" ColumnName="NumKlinait" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KupatCholim">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.KupatCholim">
+        <MappingFragment StoreEntitySet="KupatCholim">
+          <ScalarProperty Name="Kupat_Cholim_id" ColumnName="Kupat Cholim id" />
+          <ScalarProperty Name="Kupat_cholim_name" ColumnName="Kupat cholim name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offices">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Offices">
+        <MappingFragment StoreEntitySet="Offices">
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="Office_Name" ColumnName="Office Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RequestStatus">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.RequestStatus">
+        <MappingFragment StoreEntitySet="RequestStatus">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Describe" ColumnName="Describe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Snifim">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Snifim">
+        <MappingFragment StoreEntitySet="Snifim">
+          <ScalarProperty Name="SnifId" ColumnName="SnifId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+          <ScalarProperty Name="Telephone2" ColumnName="Telephone2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tested">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Tested">
+        <MappingFragment StoreEntitySet="Tested">
+          <ScalarProperty Name="Test_number" ColumnName="Test number" />
+          <ScalarProperty Name="Patient_tz" ColumnName="Patient tz" />
+          <ScalarProperty Name="Test_date_" ColumnName="Test date " />
+          <ScalarProperty Name="SnifId" ColumnName="SnifId" />
+          <ScalarProperty Name="File_test_result_navigation" ColumnName="File test result-navigation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="User_tz" ColumnName="User tz" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="User_name" ColumnName="User name" />
+          <ScalarProperty Name="Last_name" ColumnName="Last name" />
+          <ScalarProperty Name="SnifId" ColumnName="SnifId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserStatus">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.UserStatus">
+        <MappingFragment StoreEntitySet="UserStatus">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Status_name" ColumnName="Status name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zakauts">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Zakauts">
+        <MappingFragment StoreEntitySet="Zakauts">
+          <ScalarProperty Name="ZakautId" ColumnName="ZakautId" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="Zakaut_Name" ColumnName="Zakaut Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Requests">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Requests">
+        <MappingFragment StoreEntitySet="Requests">
+          <ScalarProperty Name="NumKlinait" ColumnName="NumKlinait" />
+          <ScalarProperty Name="NumRequest" ColumnName="NumRequest" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Talking2_date" ColumnName="Talking2 date" />
+          <ScalarProperty Name="Talking2" ColumnName="Talking2" />
+          <ScalarProperty Name="Talking1_date" ColumnName="Talking1 date" />
+          <ScalarProperty Name="Talking1" ColumnName="Talking1" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="Request__reaon" ColumnName="Request  reaon" />
+          <ScalarProperty Name="Intek_date" ColumnName="Intek date" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Patient_tz" ColumnName="Patient tz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.Patients">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="FamilyId" ColumnName="FamilyId" />
+          <ScalarProperty Name="First_name" ColumnName="First name" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date of birth" />
+          <ScalarProperty Name="Tz" ColumnName="Tz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndexOfExcel">
+      <EntityTypeMapping TypeName="ShemaKolenuModel.IndexOfExcel">
+        <MappingFragment StoreEntitySet="IndexOfExcel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

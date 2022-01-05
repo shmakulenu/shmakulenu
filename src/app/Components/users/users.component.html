@@ -1,0 +1,20 @@
+<mat-card>
+        <mat-card-title>
+                <span>ברוך הבא</span>
+        </mat-card-title>
+        <mat-card-content>
+                <form>
+                        <table>
+
+
+                                <div>
+                                        <!-- כשהלחצו עלכפתור זה ילך לקומפוננטת מנהל!!!!!!!!!!!! -->
+                                        <button *ngIf="checkIfManager()" (click)="GoToManager()">להוספת עובד</button>
+                                        <button (click)="GoToMenu()">תפריט שרותים</button>
+                                        <button (click)="GoToUserTable()">עובדים</button>
+
+                                </div>
+                        </table>
+                </form>
+        </mat-card-content>
+</mat-card>

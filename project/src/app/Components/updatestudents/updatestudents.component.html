@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title color="accent">
+            <span> מעדכן תלמידים חדשים</span>
+    </mat-card-title>
+
+    <mat-card-content>
+        <br>
+        <br>
+        <p id="demo">hello</p>
+        <br>
+        <br>
+<!-- לעצור אותו באיזה שהוא שלב -->
+                <!-- <mat-progress-bar mode="indeterminate" [(value)]="loadingValue" ></mat-progress-bar> -->
+        <br>
+        <br>
+        <br>
+                <mat-progress-bar mode="determinate" [(value)]="loadingValue"></mat-progress-bar>
+        <br>
+
+        <tr>
+            <td>
+                <button mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+            </td>
+        </tr>
+    </mat-card-content>
+</mat-card>
+
+
+

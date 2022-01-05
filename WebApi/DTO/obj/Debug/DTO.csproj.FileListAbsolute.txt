@@ -1,0 +1,53 @@
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\DTO\bin\Debug\DTO.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\DTO\bin\Debug\DTO.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\DTO\obj\Debug\DTO.pdb
+A:\aidy elboim\שמע קולינו\WebApi\DTO\bin\Debug\DTO.dll
+A:\aidy elboim\שמע קולינו\WebApi\DTO\bin\Debug\DTO.pdb
+A:\aidy elboim\שמע קולינו\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+A:\aidy elboim\שמע קולינו\WebApi\DTO\obj\Debug\DTO.dll
+A:\aidy elboim\שמע קולינו\WebApi\DTO\obj\Debug\DTO.pdb
+D:\איידי ושרי\WebApi\DTO\bin\Debug\DTO.dll
+D:\איידי ושרי\WebApi\DTO\bin\Debug\DTO.pdb
+D:\איידי ושרי\WebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\איידי ושרי\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\איידי ושרי\WebApi\DTO\obj\Debug\DTO.dll
+D:\איידי ושרי\WebApi\DTO\obj\Debug\DTO.pdb
+A:\aidy elboim\שמע קולינו\WebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+A:\aaaשרי פרויקט\WebApi\DTO\bin\Debug\DTO.dll
+A:\aaaשרי פרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+A:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.dll
+A:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.pdb
+A:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\aaaשרי פרויקט\WebApi\DTO\bin\Debug\DTO.dll
+E:\aaaשרי פרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+E:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.dll
+E:\aaaשרי פרויקט\WebApi\DTO\obj\Debug\DTO.pdb
+E:\פרויקט\WebApi\DTO\bin\Debug\DTO.dll
+E:\פרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+E:\פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\פרויקט\WebApi\DTO\obj\Debug\DTO.dll
+E:\פרויקט\WebApi\DTO\obj\Debug\DTO.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DTO\bin\Debug\DTO.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DTO\obj\Debug\DTO.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DTO\obj\Debug\DTO.pdb
+F:\פרויקט\WebApi\DTO\bin\Debug\DTO.dll
+F:\פרויקט\WebApi\DTO\bin\Debug\DTO.pdb
+F:\פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+F:\פרויקט\WebApi\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\פרויקט\WebApi\DTO\obj\Debug\DTO.dll
+F:\פרויקט\WebApi\DTO\obj\Debug\DTO.pdb

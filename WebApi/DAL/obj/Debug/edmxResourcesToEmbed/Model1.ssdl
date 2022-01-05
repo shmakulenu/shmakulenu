@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShemaKolenuModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="CityId" />
+    </Key>
+    <Property Name="CityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Families">
+    <Key>
+      <PropertyRef Name="FamilyId" />
+    </Key>
+    <Property Name="FamilyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Father Name" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="FatherId" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Mather Name" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="MotherId" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" />
+    <Property Name="Entry Date" Type="date" Nullable="false" />
+    <Property Name="Kupat Cholim id" Type="int" Nullable="false" />
+    <Property Name="SnifId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FamilyTelephones">
+    <Key>
+      <PropertyRef Name="Telephone number" />
+    </Key>
+    <Property Name="Telephone number" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="FamilyId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Forms">
+    <Key>
+      <PropertyRef Name="FormId" />
+    </Key>
+    <Property Name="FormId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ZakautId" Type="int" Nullable="false" />
+    <Property Name="Form Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Form FileName-Navigation" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IndexOfExcel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Klinaits">
+    <Key>
+      <PropertyRef Name="NumKlinait" />
+    </Key>
+    <Property Name="NumKlinait" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KupatCholim">
+    <Key>
+      <PropertyRef Name="Kupat Cholim id" />
+    </Key>
+    <Property Name="Kupat Cholim id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Kupat cholim name" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Offices">
+    <Key>
+      <PropertyRef Name="OfficeId" />
+    </Key>
+    <Property Name="OfficeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Office Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="Tz" />
+    </Key>
+    <Property Name="Tz" Type="int" Nullable="false" />
+    <Property Name="date of birth" Type="date" Nullable="false" />
+    <Property Name="First name" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="FamilyId" Type="int" />
+    <Property Name="Min" Type="nvarchar" MaxLength="10" />
+    <Property Name="School" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Requests">
+    <Key>
+      <PropertyRef Name="NumRequest" />
+    </Key>
+    <Property Name="Patient tz" Type="int" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Intek date" Type="date" />
+    <Property Name="Request  reaon" Type="nvarchar(max)" />
+    <Property Name="Summary" Type="nvarchar(max)" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="Talking1" Type="nvarchar(max)" />
+    <Property Name="Talking1 date" Type="date" />
+    <Property Name="Talking2" Type="nvarchar(max)" />
+    <Property Name="Talking2 date" Type="date" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="NumRequest" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumKlinait" Type="int" />
+  </EntityType>
+  <EntityType Name="RequestStatus">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Describe" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Snifim">
+    <Key>
+      <PropertyRef Name="SnifId" />
+    </Key>
+    <Property Name="SnifId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Telephone1" Type="int" Nullable="false" />
+    <Property Name="Telephone2" Type="int" />
+  </EntityType>
+  <EntityType Name="Tested">
+    <Key>
+      <PropertyRef Name="Test number" />
+    </Key>
+    <Property Name="Test number" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Patient tz" Type="int" Nullable="false" />
+    <Property Name="Test date " Type="date" Nullable="false" />
+    <Property Name="SnifId" Type="int" Nullable="false" />
+    <Property Name="File test result-navigation" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="User tz" />
+    </Key>
+    <Property Name="User tz" Type="nvarchar" MaxLength="9" Nullable="false" />
+    <Property Name="Password" Type="int" Nullable="false" />
+    <Property Name="User name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Last name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="SnifId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" />
+  </EntityType>
+  <EntityType Name="UserStatus">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status name" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Zakauts">
+    <Key>
+      <PropertyRef Name="ZakautId" />
+    </Key>
+    <Property Name="ZakautId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OfficeId" Type="int" Nullable="false" />
+    <Property Name="Zakaut Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Families_ToTable">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="1" />
+    <End Role="Families" Type="Self.Families" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="CityId" />
+      </Principal>
+      <Dependent Role="Families">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Families_ToTable_1">
+    <End Role="Snifim" Type="Self.Snifim" Multiplicity="1" />
+    <End Role="Families" Type="Self.Families" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Snifim">
+        <PropertyRef Name="SnifId" />
+      </Principal>
+      <Dependent Role="Families">
+        <PropertyRef Name="SnifId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Families_ToTable_2">
+    <End Role="KupatCholim" Type="Self.KupatCholim" Multiplicity="1" />
+    <End Role="Families" Type="Self.Families" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KupatCholim">
+        <PropertyRef Name="Kupat Cholim id" />
+      </Principal>
+      <Dependent Role="Families">
+        <PropertyRef Name="Kupat Cholim id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FamilyTelephones_ToTable_1">
+    <End Role="Families" Type="Self.Families" Multiplicity="1" />
+    <End Role="FamilyTelephones" Type="Self.FamilyTelephones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Families">
+        <PropertyRef Name="FamilyId" />
+      </Principal>
+      <Dependent Role="FamilyTelephones">
+        <PropertyRef Name="FamilyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Forms_ToTable">
+    <End Role="Zakauts" Type="Self.Zakauts" Multiplicity="1" />
+    <End Role="Forms" Type="Self.Forms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zakauts">
+        <PropertyRef Name="ZakautId" />
+      </Principal>
+      <Dependent Role="Forms">
+        <PropertyRef Name="ZakautId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Patients_ToTable">
+    <End Role="Families" Type="Self.Families" Multiplicity="0..1" />
+    <End Role="Patients" Type="Self.Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Families">
+        <PropertyRef Name="FamilyId" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="FamilyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requests_ToTable">
+    <End Role="RequestStatus" Type="Self.RequestStatus" Multiplicity="1" />
+    <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RequestStatus">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requests_ToTable_1">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Tz" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="Patient tz" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requests_ToTable_2">
+    <End Role="Klinaits" Type="Self.Klinaits" Multiplicity="0..1" />
+    <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Klinaits">
+        <PropertyRef Name="NumKlinait" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="NumKlinait" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Snifim_ToTable">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="1" />
+    <End Role="Snifim" Type="Self.Snifim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="CityId" />
+      </Principal>
+      <Dependent Role="Snifim">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Table_ToTable">
+    <End Role="Snifim" Type="Self.Snifim" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Snifim">
+        <PropertyRef Name="SnifId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="SnifId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tested_ToTable">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="Tested" Type="Self.Tested" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Tz" />
+      </Principal>
+      <Dependent Role="Tested">
+        <PropertyRef Name="Patient tz" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tested_ToTable_1">
+    <End Role="Snifim" Type="Self.Snifim" Multiplicity="1" />
+    <End Role="Tested" Type="Self.Tested" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Snifim">
+        <PropertyRef Name="SnifId" />
+      </Principal>
+      <Dependent Role="Tested">
+        <PropertyRef Name="SnifId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_ToTable">
+    <End Role="UserStatus" Type="Self.UserStatus" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserStatus">
+        <PropertyRef Name="StatusId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Zakauts_ToTable">
+    <End Role="Offices" Type="Self.Offices" Multiplicity="1" />
+    <End Role="Zakauts" Type="Self.Zakauts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offices">
+        <PropertyRef Name="OfficeId" />
+      </Principal>
+      <Dependent Role="Zakauts">
+        <PropertyRef Name="OfficeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShemaKolenuModelStoreContainer">
+    <EntitySet Name="Cities" EntityType="Self.Cities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Families" EntityType="Self.Families" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FamilyTelephones" EntityType="Self.FamilyTelephones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Forms" EntityType="Self.Forms" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IndexOfExcel" EntityType="Self.IndexOfExcel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Klinaits" EntityType="Self.Klinaits" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KupatCholim" EntityType="Self.KupatCholim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Offices" EntityType="Self.Offices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patients" EntityType="Self.Patients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Requests" EntityType="Self.Requests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RequestStatus" EntityType="Self.RequestStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Snifim" EntityType="Self.Snifim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tested" EntityType="Self.Tested" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserStatus" EntityType="Self.UserStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Zakauts" EntityType="Self.Zakauts" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Families_ToTable" Association="Self.FK_Families_ToTable">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Families" EntitySet="Families" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Families_ToTable_1" Association="Self.FK_Families_ToTable_1">
+      <End Role="Snifim" EntitySet="Snifim" />
+      <End Role="Families" EntitySet="Families" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Families_ToTable_2" Association="Self.FK_Families_ToTable_2">
+      <End Role="KupatCholim" EntitySet="KupatCholim" />
+      <End Role="Families" EntitySet="Families" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FamilyTelephones_ToTable_1" Association="Self.FK_FamilyTelephones_ToTable_1">
+      <End Role="Families" EntitySet="Families" />
+      <End Role="FamilyTelephones" EntitySet="FamilyTelephones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Forms_ToTable" Association="Self.FK_Forms_ToTable">
+      <End Role="Zakauts" EntitySet="Zakauts" />
+      <End Role="Forms" EntitySet="Forms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Patients_ToTable" Association="Self.FK_Patients_ToTable">
+      <End Role="Families" EntitySet="Families" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requests_ToTable" Association="Self.FK_Requests_ToTable">
+      <End Role="RequestStatus" EntitySet="RequestStatus" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requests_ToTable_1" Association="Self.FK_Requests_ToTable_1">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requests_ToTable_2" Association="Self.FK_Requests_ToTable_2">
+      <End Role="Klinaits" EntitySet="Klinaits" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Snifim_ToTable" Association="Self.FK_Snifim_ToTable">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Snifim" EntitySet="Snifim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Table_ToTable" Association="Self.FK_Table_ToTable">
+      <End Role="Snifim" EntitySet="Snifim" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tested_ToTable" Association="Self.FK_Tested_ToTable">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Tested" EntitySet="Tested" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tested_ToTable_1" Association="Self.FK_Tested_ToTable_1">
+      <End Role="Snifim" EntitySet="Snifim" />
+      <End Role="Tested" EntitySet="Tested" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_ToTable" Association="Self.FK_Users_ToTable">
+      <End Role="UserStatus" EntitySet="UserStatus" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Zakauts_ToTable" Association="Self.FK_Zakauts_ToTable">
+      <End Role="Offices" EntitySet="Offices" />
+      <End Role="Zakauts" EntitySet="Zakauts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

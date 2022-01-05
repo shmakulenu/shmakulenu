@@ -1,0 +1,165 @@
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\BLL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\ShemaKolenu.mdf
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\ShemaKolenu_log.ldf
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DAL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DTO.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\ShemaKolenu.mdf
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\ShemaKolenu_log.ldf
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\BLL.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DAL.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DTO.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.dll
+D:\פרוייקט איידי ושרי\הפרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\BLL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\BLL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\DAL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\DTO.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\EntityFramework.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\DAL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\DAL.dll.config
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\DTO.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\bin\Debug\EntityFramework.xml
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\obj\Debug\BLL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\BLL\obj\Debug\BLL.pdb
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\BLL.dll
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\BLL.pdb
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\DAL.dll
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\DTO.dll
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\EntityFramework.dll
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\DAL.pdb
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\DAL.dll.config
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\DTO.pdb
+A:\aidy elboim\שמע קולינו\WebApi\BLL\bin\Debug\EntityFramework.xml
+A:\aidy elboim\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+A:\aidy elboim\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+A:\aidy elboim\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+A:\aidy elboim\שמע קולינו\WebApi\BLL\obj\Debug\BLL.dll
+A:\aidy elboim\שמע קולינו\WebApi\BLL\obj\Debug\BLL.pdb
+A:\aidy elboim\שמע קולינו\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+D:\איידי ושרי\WebApi\BLL\bin\Debug\BLL.dll
+D:\איידי ושרי\WebApi\BLL\bin\Debug\BLL.pdb
+D:\איידי ושרי\WebApi\BLL\bin\Debug\DAL.dll
+D:\איידי ושרי\WebApi\BLL\bin\Debug\DTO.dll
+D:\איידי ושרי\WebApi\BLL\bin\Debug\EntityFramework.dll
+D:\איידי ושרי\WebApi\BLL\bin\Debug\DAL.pdb
+D:\איידי ושרי\WebApi\BLL\bin\Debug\DAL.dll.config
+D:\איידי ושרי\WebApi\BLL\bin\Debug\DTO.pdb
+D:\איידי ושרי\WebApi\BLL\bin\Debug\EntityFramework.xml
+D:\איידי ושרי\WebApi\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\איידי ושרי\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+D:\איידי ושרי\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\איידי ושרי\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\איידי ושרי\WebApi\BLL\obj\Debug\BLL.dll
+D:\איידי ושרי\WebApi\BLL\obj\Debug\BLL.pdb
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\BLL.dll
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DAL.dll
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DTO.dll
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+A:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+A:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+A:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+A:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+A:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.dll
+A:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\BLL.dll
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DAL.dll
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DTO.dll
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+E:\aaaשרי פרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+E:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+E:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.dll
+E:\aaaשרי פרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+E:\פרויקט\WebApi\BLL\bin\Debug\BLL.dll
+E:\פרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+E:\פרויקט\WebApi\BLL\bin\Debug\DAL.dll
+E:\פרויקט\WebApi\BLL\bin\Debug\DTO.dll
+E:\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+E:\פרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+E:\פרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+E:\פרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+E:\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+E:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+E:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\פרויקט\WebApi\BLL\obj\Debug\BLL.dll
+E:\פרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+G:\פרויקט\WebApi\BLL\bin\Debug\BLL.dll
+G:\פרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+G:\פרויקט\WebApi\BLL\bin\Debug\DAL.dll
+G:\פרויקט\WebApi\BLL\bin\Debug\DTO.dll
+G:\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+G:\פרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+G:\פרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+G:\פרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+G:\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+G:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+G:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+G:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+G:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+G:\פרויקט\WebApi\BLL\obj\Debug\BLL.dll
+G:\פרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\BLL.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\DAL.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\DTO.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\obj\Debug\BLL.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\BLL\obj\Debug\BLL.pdb
+F:\פרויקט\WebApi\BLL\bin\Debug\BLL.dll
+F:\פרויקט\WebApi\BLL\bin\Debug\BLL.pdb
+F:\פרויקט\WebApi\BLL\bin\Debug\DAL.dll
+F:\פרויקט\WebApi\BLL\bin\Debug\DTO.dll
+F:\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.dll
+F:\פרויקט\WebApi\BLL\bin\Debug\DAL.pdb
+F:\פרויקט\WebApi\BLL\bin\Debug\DAL.dll.config
+F:\פרויקט\WebApi\BLL\bin\Debug\DTO.pdb
+F:\פרויקט\WebApi\BLL\bin\Debug\EntityFramework.xml
+F:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+F:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.ResolveComReference.cache
+F:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\פרויקט\WebApi\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\פרויקט\WebApi\BLL\obj\Debug\BLL.dll
+F:\פרויקט\WebApi\BLL\obj\Debug\BLL.pdb

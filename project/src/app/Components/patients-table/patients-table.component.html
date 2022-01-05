@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-title color="accent">       
+            <span >רשימת התלמידים הכללית</span>
+    </mat-card-title>
+    <mat-card-content>
+        <label>: חיפוש תלמיד לפי ת.ז או שם או טלפון </label>
+        <br>
+        <input type="text" [(ngModel)]="teur">
+        <br>
+        <table class="table table-hover" matSort (matSortChange)="sortData($event)">
+            <tr>
+                <th *ngFor="let c of displayedColumns" [mat-sort-header]="c">
+                    {{c}}
+                </th>       
+            </tr>
+            <tr *ngFor="let p of patients | searchpatient:teur " (click)='onSelectPatient(p.Tz,p.StatusId)'>   
+                    <td>{{p.Intek_date | date:'dd-MM-yyyy'}}</td>
+                    <td>{{p.KupatCholimName}}</td>
+                    <td>{{p.CityName}}</td>
+                    <td>{{p.Address}}</td>
+                    <td>0{{p.Tellephone2}}</td>
+                    <td>0{{p.Tellephone1}}</td> 
+                    <td>{{p.Min}}</td>
+                    <td>{{p.LastName}}</td>
+                    <td>{{p.First_name}}</td>  
+                    <td>{{p.date_of_birth | date:'dd-MM-yyyy'}}</td>
+                    <td>{{p.Tz}}</td> 
+                </tr>   
+        </table>
+    </mat-card-content>
+</mat-card>

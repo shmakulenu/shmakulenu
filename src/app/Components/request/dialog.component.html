@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>בחר פעולה</h1>
+<div mat-dialog-content>
+    <mat-label> השמירה התבצעה בהצלחה
+        ?הינך מעוניין לממש זכאויות לתלמיד זה </mat-label>
+    <!-- <mat-form-field>
+    <mat-label>בחר פעולה </mat-label>
+    <mat-select [(ngModel)]="selected">
+      <mat-option>--</mat-option>
+      <mat-option *ngFor="let a of actions" [value]="a">
+        {{a}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">לא</button>
+    <button mat-button (click)="submit()">כן</button>
+</div>

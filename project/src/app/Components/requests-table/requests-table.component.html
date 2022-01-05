@@ -1,0 +1,54 @@
+<mat-card>
+        <mat-card-title color="accent">
+                <span>רשימת פניות </span>
+        </mat-card-title>
+        <mat-card-content>
+                <tr>
+                        <td>
+                                <!-- מיון לפי פניות בהמתנה -->
+                                <button (click)="showTable(1)" [ngClass]="{'green':toogle1,'regular':!toogle1}" mat-raised-button color="accent"> פניות בהמתנה </button>
+                        </td>
+                        <td>
+                                <!-- מיון לפי פניות שנסגרו -->
+                                <button (click)="showTable(2)" [ngClass]="{'green':toogle2,'regular':!toogle2}" mat-raised-button color="accent"> פניות שנסגרו </button>
+                        </td>
+                        <td>
+                                <!-- (click)="showPatsientsTable()" -->
+                                <button (click)="showTable(4)"  [ngClass]="{'green':toogle3,'regular':!toogle3}" mat-raised-button color="accent"> פניות שהתקבלו </button>
+                        </td>
+                </tr>
+                <br>
+                <tr>
+                        <td colspan="2" class="content-center">
+                                <button *ngIf="isShow==true && toogle1==true" (click)="goToEmptyStudentTicket()" mat-raised-button color="accent">חדש</button>
+                        </td>
+                </tr>
+                <label *ngIf="isShow==true">: חיפוש תלמיד לפי ת.ז או שם או טלפון </label>
+                <br>
+                <input *ngIf="isShow==true" type="text" [(ngModel)]="teur">
+                <br>
+
+
+                <table *ngIf="isShow==true" class="table table-hover" matSort (matSortChange)="sortData($event)">
+                        <tr>
+                                <th *ngFor="let c of displayedColumns" [mat-sort-header]="c">
+                                        {{c}}
+                                </th>
+                        </tr>
+                        <tr *ngFor="let r of patients | searchpatient:teur" (click)="onSelectRequest(r.Tz,r.StatusId)">
+                                <td>{{r.Notes}}</td>
+                                <td>{{r.KupatCholimName}}</td>
+                                <td>{{r.CityName}}</td>
+                                <td>{{r.Address}}</td>
+                                <td>0{{r.Tellephone2}}</td>
+                                <td>0{{r.Tellephone1}}</td>
+                                <td>{{r.date_of_birth | date:'dd-MM-yyyy'}}</td>
+                                <td>{{r.Tz}}</td>
+                                <td>{{r.First_name}}</td>
+                                <td>{{r.RequestDate}}</td>
+                        </tr>
+                </table>
+        <button mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+        </mat-card-content>
+        <router-outlet></router-outlet>
+</mat-card>

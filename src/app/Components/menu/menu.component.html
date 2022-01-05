@@ -1,0 +1,88 @@
+<mat-card>
+        <mat-card-title color="accent">
+                <span> מקבלי שרות/שמות הילדים</span>
+        </mat-card-title>
+        <mat-card-content>
+                <form>
+                        <table>
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <!-- //(click)="GoToRequestsTable()" -->
+                                        <button mat-raised-button color="accent" [routerLink]="'requestsTable'">פניות</button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+
+                                <td>
+                                        <!-- (click)="GoToPatientsTable()" -->
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [routerLink]="'patientsTable'">רשימת התלמידים הכללית</button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true">מעון</button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true">גני שמע קולינו</button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true">מועדנית</button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+                                <!-- <br/> -->
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true"> שעות שמע </button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true"> חנוך מיוחד </button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true"> תיכונים</button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true"> לא פעיל </button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true"> פטור </button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <!-- <mat-form-field class="demo-full-width">   -->
+                                        <button mat-raised-button color="accent" [disabled]="true"> טיפולי דיבור </button>
+                                        <!-- </mat-form-field> -->
+                                </td>
+
+                                <td>
+                                        <button mat-raised-button color="accent" (click)="readAsapimFromExcel()">עדכון תלמידים</button>
+                                </td>
+
+                        </table>
+                </form>
+        </mat-card-content>
+        <router-outlet></router-outlet>
+        <button mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+</mat-card>

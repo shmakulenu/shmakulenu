@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>מימוש זכאויות</h1>
+<div mat-dialog-content>
+    <mat-label> השמירה התבצעה בהצלחה</mat-label>
+    <br/>
+    <mat-label>?הינך מעוניין לממש זכאויות לתלמיד זה </mat-label>
+    <br/>
+    <mat-form-field>
+    <mat-label>בחר פעולה </mat-label>
+    <mat-select  #option [(value)]="selected1">
+      <mat-option>--</mat-option>
+      <mat-option *ngFor="let a of actions" [value]="a" >
+        {{a}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div> 
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">לא</button>
+    <button mat-button (click)="submit(selected1)">כן</button>
+</div> 
+
+

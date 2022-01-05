@@ -1,0 +1,125 @@
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\DAL.dll.config
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\DAL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\DAL.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\DTO.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\DTO.pdb
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.xml
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\obj\Debug\DAL.dll
+F:\תיקייה כללית\שנה ב תשפא\פרויקטים\גיבויים זמניים\איידי ושרי רח אייר\שמע קולינו\WebApi\DAL\obj\Debug\DAL.pdb
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\DAL.dll.config
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\DAL.dll
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\DAL.pdb
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\DTO.dll
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.dll
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\DTO.pdb
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.xml
+A:\aidy elboim\שמע קולינו\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+A:\aidy elboim\שמע קולינו\WebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+A:\aidy elboim\שמע קולינו\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+A:\aidy elboim\שמע קולינו\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+A:\aidy elboim\שמע קולינו\WebApi\DAL\obj\Debug\DAL.dll
+A:\aidy elboim\שמע קולינו\WebApi\DAL\obj\Debug\DAL.pdb
+D:\איידי ושרי\WebApi\DAL\bin\Debug\DAL.dll.config
+D:\איידי ושרי\WebApi\DAL\bin\Debug\DAL.dll
+D:\איידי ושרי\WebApi\DAL\bin\Debug\DAL.pdb
+D:\איידי ושרי\WebApi\DAL\bin\Debug\DTO.dll
+D:\איידי ושרי\WebApi\DAL\bin\Debug\EntityFramework.dll
+D:\איידי ושרי\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\איידי ושרי\WebApi\DAL\bin\Debug\DTO.pdb
+D:\איידי ושרי\WebApi\DAL\bin\Debug\EntityFramework.xml
+D:\איידי ושרי\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\איידי ושרי\WebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\איידי ושרי\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\איידי ושרי\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\איידי ושרי\WebApi\DAL\obj\Debug\DAL.dll
+D:\איידי ושרי\WebApi\DAL\obj\Debug\DAL.pdb
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DAL.dll.config
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DAL.dll
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DAL.pdb
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DTO.dll
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.dll
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DTO.pdb
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.xml
+A:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+A:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+A:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+A:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.dll
+A:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.pdb
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DAL.dll.config
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DAL.dll
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DAL.pdb
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DTO.dll
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.dll
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\DTO.pdb
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.xml
+E:\aaaשרי פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.dll
+E:\aaaשרי פרויקט\WebApi\DAL\obj\Debug\DAL.pdb
+E:\פרויקט\WebApi\DAL\bin\Debug\DAL.dll.config
+E:\פרויקט\WebApi\DAL\bin\Debug\DAL.dll
+E:\פרויקט\WebApi\DAL\bin\Debug\DAL.pdb
+E:\פרויקט\WebApi\DAL\bin\Debug\DTO.dll
+E:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.dll
+E:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\פרויקט\WebApi\DAL\bin\Debug\DTO.pdb
+E:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.xml
+E:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\פרויקט\WebApi\DAL\obj\Debug\DAL.dll
+E:\פרויקט\WebApi\DAL\obj\Debug\DAL.pdb
+G:\פרויקט\WebApi\DAL\bin\Debug\DAL.dll.config
+G:\פרויקט\WebApi\DAL\bin\Debug\DAL.dll
+G:\פרויקט\WebApi\DAL\bin\Debug\DAL.pdb
+G:\פרויקט\WebApi\DAL\bin\Debug\DTO.dll
+G:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.dll
+G:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\פרויקט\WebApi\DAL\bin\Debug\DTO.pdb
+G:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.xml
+G:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+G:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+G:\פרויקט\WebApi\DAL\obj\Debug\DAL.dll
+G:\פרויקט\WebApi\DAL\obj\Debug\DAL.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\DAL.dll.config
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\DAL.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\DAL.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\DTO.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\DTO.pdb
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.xml
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\obj\Debug\DAL.dll
+C:\Users\IMOE001\Desktop\פרויקט\WebApi\DAL\obj\Debug\DAL.pdb
+F:\פרויקט\WebApi\DAL\bin\Debug\DAL.dll.config
+F:\פרויקט\WebApi\DAL\bin\Debug\DAL.dll
+F:\פרויקט\WebApi\DAL\bin\Debug\DAL.pdb
+F:\פרויקט\WebApi\DAL\bin\Debug\DTO.dll
+F:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.dll
+F:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\פרויקט\WebApi\DAL\bin\Debug\DTO.pdb
+F:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.xml
+F:\פרויקט\WebApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\פרויקט\WebApi\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\פרויקט\WebApi\DAL\obj\Debug\DAL.dll
+F:\פרויקט\WebApi\DAL\obj\Debug\DAL.pdb

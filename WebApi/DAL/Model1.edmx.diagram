@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c7764defee8a4d16884de04ec3fb7f81" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="ShemaKolenuModel.Cities" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Families" Width="1.5" PointX="6.375" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.FamilyTelephones" Width="1.5" PointX="9.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Forms" Width="1.5" PointX="5.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Klinaits" Width="1.5" PointX="7.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.KupatCholim" Width="1.5" PointX="3.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Offices" Width="1.5" PointX="0.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.RequestStatus" Width="1.5" PointX="8.875" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Snifim" Width="1.5" PointX="1.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Tested" Width="1.5" PointX="11.25" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Users" Width="1.5" PointX="4" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.UserStatus" Width="1.5" PointX="6.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Zakauts" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Families_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Snifim_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Families_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Families_ToTable_2" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_FamilyTelephones_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Forms_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Zakauts_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Table_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Tested_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Users_ToTable" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Requests" Width="1.5" PointX="11.75" PointY="0.875" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Requests_ToTable_2" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Requests_ToTable" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.Patients" Width="1.5" PointX="8.75" PointY="4.25" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Patients_ToTable" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Requests_ToTable_1" />
+        <AssociationConnector Association="ShemaKolenuModel.FK_Tested_ToTable" />
+        <EntityTypeShape EntityType="ShemaKolenuModel.IndexOfExcel" Width="1.5" PointX="0.75" PointY="2.875" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
