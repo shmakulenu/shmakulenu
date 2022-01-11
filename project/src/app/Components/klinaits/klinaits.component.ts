@@ -31,7 +31,7 @@ export class KlinaitsComponent implements OnInit {
       this.requestService.GetRequestByTz(this.formData.value.tz).subscribe(
         data => {
           if(data)
-            this.router.navigate(["/request/" + this.formData.value.tz]);
+            this.router.navigate(["/request/" + this.formData.value.tz+"/1"]);
           else
           {
             this.formData.get('tz').setValue(null);

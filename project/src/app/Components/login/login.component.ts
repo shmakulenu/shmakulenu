@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
           }
           else {
             this.usersService.user = data;
-            this.router.navigate(["/users"]);
+            this.router.navigate(["/menu"]);
           }
         },
         err => { 

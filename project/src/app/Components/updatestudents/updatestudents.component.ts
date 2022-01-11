@@ -32,12 +32,12 @@ export class UpdatestudentsComponent implements OnInit {
         this.index++;
       }
       else
-        this.router.navigate(["/menu"]);
+        this.router.navigate(["/menu/requestsTable"]);
     }, 1000)
   }
 
   routeBack() {
-    this.router.navigate(["/menu"]);
+    this.router.navigate(["/menu/requestsTable"]);
   }
 
   ngOnDestroy(): void {

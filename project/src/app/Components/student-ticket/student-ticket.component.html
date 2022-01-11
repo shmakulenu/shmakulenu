@@ -1,236 +1,239 @@
 <mat-card>
-        <mat-card-title>
-                <span>כרטיס תלמיד</span>
-        </mat-card-title>
-        <mat-card-content *ngIf="detailsForm">
-                <form [formGroup]="detailsForm">
-                        <table>
-                                <mat-card-title>
-                                        <span>פרטים אישיים</span>
-                                        <br/>
-                                 </mat-card-title>
-                                <tr>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="LastName" matInput
-                                                                placeholder=" שם משפחה">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span
-                                                                *ngIf="!detailsForm.get('LastName').valid && detailsForm.get('LastName').touched">
-                                                                הכנס בבקשה שם משפחה!!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="First_name" matInput
-                                                                placeholder="שם פרטי">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span
-                                                                *ngIf="!detailsForm.get('First_name').valid && detailsForm.get('First_name').touched">הכנס
-                                                                בבקשה שם!!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field>
-                                                        <mat-select formControlName="SnifId" placeholder="בחר סניף">
-                                                                <mat-option *ngFor="let s of snifim" [value]="s.SnifId">
-                                                                        {{s.SnifName}}</mat-option>
-                                                        </mat-select>
-                                                        <mat-error>
-                                                                <span
-                                                                        *ngIf="!detailsForm.get('SnifId').valid && detailsForm.get('SnifId').touched">בבקשה
-                                                                        בחר סניף !!!</span>
-                                                        </mat-error>
-                                                </mat-form-field>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="Address" matInput placeholder="כתובת">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span
-                                                                *ngIf="!detailsForm.get('Address').valid && detailsForm.get('Address').touched">הכנס
-                                                                בבקשה כתובת !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input matInput formControlName="date_of_birth"
-                                                                [matDatepicker]="picker" placeholder="תאריך לידה">
-                                                        <mat-datepicker-toggle matSuffix [for]="picker">
-                                                        </mat-datepicker-toggle>
-                                                        <mat-datepicker #picker></mat-datepicker>
+    <mat-card-title>
+        <span>כרטיס תלמיד</span>
+    </mat-card-title>
+    <mat-card-content *ngIf="detailsForm">
+        <form [formGroup]="detailsForm">
+            <table>
+                <mat-card-title>
+                    <span>פרטים אישיים</span>
 
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!detailsForm.get('date_of_birth').valid && detailsForm.get('date_of_birth').touched">הכנס
-                                                                בבקשה תאריך לידה!!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input #inputTz formControlName="Tz" matInput
-                                                                placeholder="תעודת זהות">
+                </mat-card-title>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="LastName" matInput placeholder=" שם משפחה">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('LastName').valid && detailsForm.get('LastName').touched">
+                                                                הכנס נא להזין שם משפחה</span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="First_name" matInput placeholder="שם פרטי">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('First_name').valid && detailsForm.get('First_name').touched">הכנס
+                                                                נא להזין שם</span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <mat-select formControlName="SnifId" placeholder="בחר סניף">
+                                <mat-option *ngFor="let s of snifim" [value]="s.SnifId">
+                                    {{s.SnifName}}</mat-option>
+                            </mat-select>
+                            <mat-error>
+                                <span *ngIf="!detailsForm.get('SnifId').valid && detailsForm.get('SnifId').touched">נא להזין
+                                                                        בחר סניף </span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="Address" matInput placeholder="כתובת">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Address').valid && detailsForm.get('Address').touched">הכנס
+                                                                נא להזין כתובת </span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput formControlName="date_of_birth" [matDatepicker]="picker" placeholder="תאריך לידה">
+                            <mat-datepicker-toggle matSuffix [for]="picker">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
 
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span
-                                                                *ngIf="!detailsForm.get('Tz').valid && detailsForm.get('Tz').touched">הכנס
-                                                                בבקשה תעודת זהות!!!!</span>
-                                                </mat-error>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <!-- <span>{{age}}</span> -->
-                                                <mat-form-field class="demo-full-width">
-                                                        <input [value]="age" disabled matInput placeholder="גיל">
-                                                </mat-form-field>
-                                        </td>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('date_of_birth').valid && detailsForm.get('date_of_birth').touched">הכנס
+                                                                נא להזין תאריך לידה</span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input #inputTz formControlName="Tz" matInput placeholder="תעודת זהות">
 
-                                        <td>
-                                                <mat-form-field>
-                                                        <mat-select formControlName="CityId" placeholder="בחר עיר">
-                                                                <mat-option *ngFor="let c of cities" [value]="c.CityId">
-                                                                        {{c.City_Name}}</mat-option>
-                                                        </mat-select>
-                                                        <mat-error>
-                                                                <span
-                                                                        *ngIf="!detailsForm.get('CityId').valid && detailsForm.get('CityId').touched">בבקשה
-                                                                        בחר עיר !!!</span>
-                                                        </mat-error>
-                                                </mat-form-field>
-                                        </td>
-                                        <td>
-                                                <mat-form-field>
-                                                        <mat-select formControlName="KupatCholimid" placeholder="בחר קופח">
-                                                                <mat-option *ngFor="let k of kupatCholim" [value]="k.Kupat_Cholim_id">
-                                                                        {{k.Kupat_cholim_name}}</mat-option>
-                                                        </mat-select>
-                                                        <mat-error>
-                                                                <span
-                                                                        *ngIf="!detailsForm.get('KupatCholimid').valid && detailsForm.get('KupatCholimid').touched">בבקשה
-                                                                        בחר קופח !!!</span>
-                                                        </mat-error>
-                                                </mat-form-field>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <div *ngIf="isNew" class="col-md-3">
-                                                <input type="file" #file placeholder="Choose file" (change)="uploadFile($event)"
-                                                        style="display:none;">
-                                                <button type="button" class="btn btn-success" [disabled]="inputTz.value==0"  (click)="file.click()">    Upload File    </button>
-                                        </div>
-                                </tr>
-                                <mat-card-title>
-                                        <span>תקשורת</span>
-                                        <br/>
-                                 </mat-card-title>
-                                <tr>
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Tz').valid && detailsForm.get('Tz').touched">הכנס
+                                                                נא להזין תעודת זהות</span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <span>{{age}}</span> -->
+                        <mat-form-field class="demo-full-width">
+                            <input [value]="age" disabled matInput placeholder="גיל">
+                        </mat-form-field>
+                    </td>
 
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="Mail" matInput placeholder="מייל">
-                                                        <mat-hint>demo@demo.com : דוגמא תקינה</mat-hint>
-                                                </mat-form-field>
+                    <td>
+                        <mat-form-field>
+                            <mat-select formControlName="CityId" placeholder="בחר עיר">
+                                <mat-option *ngFor="let c of cities" [value]="c.CityId">
+                                    {{c.City_Name}}</mat-option>
+                            </mat-select>
+                            <mat-error>
+                                <span *ngIf="!detailsForm.get('CityId').valid && detailsForm.get('CityId').touched">נא להזין
+                                                                        בחר עיר </span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <mat-select formControlName="KupatCholimid" placeholder="בחר קופח">
+                                <mat-option *ngFor="let k of kupatCholim" [value]="k.Kupat_Cholim_id">
+                                    {{k.Kupat_cholim_name}}</mat-option>
+                            </mat-select>
+                            <mat-error>
+                                <span *ngIf="!detailsForm.get('KupatCholimid').valid && detailsForm.get('KupatCholimid').touched">נא להזין
+                                                                        בחר קופח </span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <div *ngIf="isNew" class="col-md-3 custom-file-upload-wrapper">
+                        <label class="custom-file-upload" for="uploadExcel">
+                    <mat-icon>insert_drive_file</mat-icon>
+                    <input type="file"/>
+                    Upload file
+                </label>
+                        <div class="custom-file-upload-name-wrapper">
+                            <label class="custom-file-upload-name" *ngIf="fileName1">{{fileName1}}</label>
+                            <label class="custom-file-upload-name" *ngIf="!fileName1">No file selected</label>
+                        </div>
+                        <input class="form-control col-md-8" type="file" (change)="uploadFile($event)" id="uploadExcel" autocomplete="off" style="border: none;">
 
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input type="number" formControlName="Tellephone1" matInput
-                                                                placeholder="טלפון">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!detailsForm.get('Tellephone1').valid && detailsForm.get('Tellephone1').touched">הכנס
-                                                                בבקשה טלפון !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <!-- צריך לשרשר 0 למספר -->
-                                                        <input type="number" formControlName="Tellephone2" matInput placeholder="טל">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!detailsForm.get('Tellephone2').valid && detailsForm.get('Tellephone2').touched">הכנס
-                                                                בבקשה טל !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="Father_Name" matInput
-                                                                placeholder="שם האב">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!detailsForm.get('Father_Name').valid && detailsForm.get('Father_Name').touched">הכנס
-                                                                בבקשה שם האב !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="FatherId" matInput placeholder="ת.ז. האב">
-                                                </mat-form-field>
+                        <button mat-raised-button color="accent" [disabled]="!fileName1" (click)="file.click()" class="btn btn-success" style="display: inline-block;">
+                    Upload
+                  </button>
 
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input type="number" formControlName="Tellephone3" matInput placeholder="טל">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!detailsForm.get('Tellephone3').valid && detailsForm.get('Tellephone3').touched">הכנס בבקשה טל האם !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="Mother_Name" matInput placeholder="שם האם">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span
-                                                                *ngIf="!detailsForm.get('Mother_Name').valid && detailsForm.get('Mother_Name').touched">הכנס
-                                                                בבקשה שם האם !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="MotherId" matInput
-                                                                placeholder="ת.ז. האם">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span
-                                                                *ngIf="!detailsForm.get('MotherId').valid && detailsForm.get('MotherId').touched">הכנס
-                                                                בבקשה ת.ז. האב !!!!</span>
-                                                </mat-error>
-                                        </td>
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <button mat-raised-button color="accent"
-                                                        (click)="goToRequest(inputTz.value)"
-                                                        [disabled]="inputTz.value==0">שמור ועבור לעדכון סטטוס</button>
-                                        </td>
-                                        <td>
-                                                <button *ngIf="!isNew" mat-raised-button color="accent"
-                                                        (click)="updateOrAddPatient()"
-                                                        [disabled]="inputTz.value==0">שמור</button>
-                                        </td>
-                                        <td>
-                                                <button type="button" mat-raised-button color="accent"
-                                                        (click)="routeBack()">חזור</button>
-                                        </td>
-                                </tr>
-                        </table>
-                </form>
-                <!-- <form [formGroup]="educationForm">
+                        <!-- <button type="button" class="btn btn-success" [disabled]="inputTz.value==0" (click)="file.click()">    Upload File    </button>-->
+
+                    </div>
+
+
+                    <!-- <div *ngIf="isNew" class="col-md-3">
+                        <input type="file" #file placeholder="Choose file" (change)="uploadFile($event)" style="display:none;">
+                        <button type="button" class="btn btn-success" [disabled]="inputTz.value==0" (click)="file.click()">    Upload File    </button>
+                    </div> -->
+                </tr>
+                <mat-card-title>
+                    <br>
+                    <span>תקשורת</span>
+
+
+                </mat-card-title>
+                <tr>
+
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="Mail" matInput placeholder="מייל">
+                            <mat-hint>demo@demo.com : דוגמא תקינה</mat-hint>
+                        </mat-form-field>
+
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input type="number" formControlName="Tellephone1" matInput placeholder="טלפון">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Tellephone1').valid && detailsForm.get('Tellephone1').touched">הכנס
+                                                                נא להזין טלפון </span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="Father_Name" matInput placeholder="שם האב">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Father_Name').valid && detailsForm.get('Father_Name').touched">הכנס
+                                                                נא להזין שם האב </span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="FatherId" matInput placeholder="ת.ז. האב">
+                        </mat-form-field>
+
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <!-- צריך לשרשר 0 למספר -->
+                            <input type="number" formControlName="Tellephone2" matInput placeholder="טל">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Tellephone2').valid && detailsForm.get('Tellephone2').touched">הכנס
+                                                                נא להזין טל </span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="Mother_Name" matInput placeholder="שם האם">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Mother_Name').valid && detailsForm.get('Mother_Name').touched">הכנס
+                                                                נא להזין שם האם </span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="MotherId" matInput placeholder="ת.ז. האם">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('MotherId').valid && detailsForm.get('MotherId').touched">הכנס
+                                                                נא להזין ת.ז. האב </span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input type="number" formControlName="Tellephone3" matInput placeholder="טל">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!detailsForm.get('Tellephone3').valid && detailsForm.get('Tellephone3').touched">הכנס נא להזין טל האם </span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button mat-raised-button color="accent" (click)="goToRequest(inputTz.value)" [disabled]="inputTz.value==0">שמור ועבור לעדכון סטטוס</button>
+                    </td>
+                    <td>
+                        <button *ngIf="!isNew" mat-raised-button color="accent" (click)="updateOrAddPatient()" [disabled]="inputTz.value==0">שמור</button>
+                    </td>
+                    <td>
+                        <button type="button" mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <!-- <form [formGroup]="educationForm">
                         <table>
                                 <mat-card-title> -->
-                                        <!-- <span>חינוך</span>
+        <!-- <span>חינוך</span>
                                         <br/>
                                  </mat-card-title>
                                 <tr>
@@ -242,8 +245,8 @@
                                                         </mat-select>
                                                         <mat-error>
                                                                 <span
-                                                                        *ngIf="!educationForm.get('FrameType').valid && educationForm.get('FrameType').touched">בבקשה
-                                                                        בחר מעמד !!!</span>
+                                                                        *ngIf="!educationForm.get('FrameType').valid && educationForm.get('FrameType').touched">נא להזין
+                                                                        בחר מעמד </span>
                                                         </mat-error>
                                                 </mat-form-field>
                                         </td>
@@ -254,7 +257,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('School').valid && educationForm.get('School').touched">הכנס
-                                                                בבקשה שם המוסד !!!!</span>
+                                                                נא להזין שם המוסד </span>
                                                 </mat-error>
                                         </td>
                                 </tr>
@@ -267,7 +270,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('Tellephone').valid && educationForm.get('Tellephone').touched">הכנס
-                                                                בבקשה טלפון המוסד !!!!</span>
+                                                                נא להזין טלפון המוסד </span>
                                                 </mat-error>
                                         </td>
                                         <td>
@@ -277,7 +280,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('City').valid && educationForm.get('City').touched">הכנס
-                                                                בבקשה עיר!!!!</span>
+                                                                נא להזין עיר</span>
                                                 </mat-error>
 
                                         </td>
@@ -288,7 +291,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('Address').valid && educationForm.get('Address').touched">הכנס
-                                                                בבקשה כתובת!!!!</span>
+                                                                נא להזין כתובת</span>
                                                 </mat-error>
                                         </td>
                                 </tr>
@@ -301,7 +304,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('Rakezet_shiluv').valid && educationForm.get('Rakezet_shiluv').touched">
-                                                                הכנס בבקשה רכזת שילוב !!!!</span>
+                                                                הכנס נא להזין רכזת שילוב </span>
                                                 </mat-error>
                                         </td>
                                         <td>
@@ -312,7 +315,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('RakezetTellephone').valid && educationForm.get('RakezetTellephone').touched">
-                                                                הכנס בבקשה רכזת שילוב !!!!</span>
+                                                                הכנס נא להזין רכזת שילוב </span>
                                                 </mat-error>
                                         </td>
                                         <td>
@@ -324,7 +327,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('RakezetMail').valid && educationForm.get('RakezetMail').touched">
-                                                                הכנס בבקשה מייל!!!!</span>
+                                                                הכנס נא להזין מייל</span>
                                                 </mat-error>
                                         </td>
                                 </tr>
@@ -337,7 +340,7 @@
                                                 <mat-error>
                                                         <span
                                                                 *ngIf="!educationForm.get('Teacher').valid && educationForm.get('Teacher').touched">
-                                                                הכנס בבקשה מורת שמע!!!!</span>
+                                                                הכנס נא להזין מורת שמע</span>
                                                 </mat-error>
                                         </td>
                                 </tr>
@@ -351,8 +354,8 @@
                                                         </mat-select>
                                                         <mat-error>
                                                                 <span
-                                                                        *ngIf="!educationForm.get('EducationType').valid && educationForm.get('EducationType').touched">בבקשה
-                                                                        בחר סוג חינוך !!!</span>
+                                                                        *ngIf="!educationForm.get('EducationType').valid && educationForm.get('EducationType').touched">נא להזין
+                                                                        בחר סוג חינוך </span>
                                                         </mat-error>
                                                 </mat-form-field>
                                         </td>
@@ -364,14 +367,14 @@
                                                         </mat-select>
                                                         <mat-error>
                                                                 <span
-                                                                        *ngIf="!educationForm.get('Position').valid && educationForm.get('Position').touched">בבקשה
-                                                                        בחר מעמד !!!</span>
+                                                                        *ngIf="!educationForm.get('Position').valid && educationForm.get('Position').touched">נא להזין
+                                                                        בחר מעמד </span>
                                                         </mat-error>
                                                 </mat-form-field>
 
                                         </td>
                                 </tr> -->
-                                <!-- <tr>
+        <!-- <tr>
                                         <td>
                                                 <button mat-raised-button color="accent">פילוח שעות</button>
                                         </td>
@@ -382,7 +385,7 @@
                                                 <button mat-raised-button color="accent">מועדונית</button>
                                         </td>
                                 </tr> -->
-                       <!-- </table> -->
-                <!-- </form> --> 
-        </mat-card-content>
+        <!-- </table> -->
+        <!-- </form> -->
+    </mat-card-content>
 </mat-card>

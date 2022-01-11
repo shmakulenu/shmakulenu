@@ -1,42 +1,43 @@
-<mat-card >
+<mat-card style="    max-width: 80%;">
     <mat-card-title color="accent">
-            <span>טפסי זכאויות</span>
+        <span>טפסי זכאויות</span>
     </mat-card-title>
-    <mat-card-content>
-        <tr>
-        <td>
-            <span> תלמיד יקר</span><br/>
-            <span> ,שמחים אנו לבשר לך כי נמצאת זכאי</span><br/>
-            <span> ,נשמח לעמוד לשירותך ולעזור בכל מה שנצרך</span><br/>
-            <span> ,בשורות טובות ובדיאות איתנה</span><br/>
-            <span> -להלן טפסי זכאותך</span><br/>
-            <span> ...להשתמע  </span><br/>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div id="myDiv"> 
-            <br/>
-            <img src="../../../assets/img/IMG_1254.JPG" alt="">
-            </div>
-        </td>
-    </tr>
-        <br/>
-        <td>
-            <span> למימוש לחץ כאן</span><br/>
-        </td>
-        <br/>
-        <td>
-            <button mat-raised-button color="accent" (click)="print()">הדפסה</button>
-        </td>
-        <td>
-            <button mat-stroked-button color="accent" (click)="sendToMail()">שליחת מייל</button>
-        </td>
+    <mat-card-content style="display:flex;direction:rtl;">
         <tr>
             <td>
-                <button type="button" mat-raised-button color="accent"(click)="routeBack()">חזור</button>
+                <span style="font-weight: bold;font-size:18px"> תלמיד יקר</span><br/>
+                <span> ,שמחים אנו לבשר לך כי נמצאת זכאי</span><br/>
+                <span> ,נשמח לעמוד לשירותך ולעזור בכל מה שנצרך</span><br/>
+                <span> ,בשורות טובות ובדיאות איתנה</span><br/>
+                <span> -להלן טפסי זכאותך</span><br/>
+                <span> ...להשתמע  </span><br/>
+            </td>
+            <br/>
+            <td>
+                <span> למימוש לחץ כאן</span><br/>
+            </td>
+            <br/>
+            <td>
+                <button mat-raised-button color="accent" (click)="print()">הדפסה</button>
+                <button mat-stroked-button color="accent" (click)="sendToMail()">שליחת מייל</button>
+
             </td>
         </tr>
+        <!-- <tr>
+            <td>
+                <br>
+                <button type="button" mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+            </td>
+
+        </tr> -->
+        <tr>
+            <td>
+                <div id="myDiv">
+                    <br/>
+                    <img src="../../../assets/img/IMG_1254.JPG" width="340px" alt="">
+                </div>
+            </td>
+        </tr>
+
     </mat-card-content>
 </mat-card>
-

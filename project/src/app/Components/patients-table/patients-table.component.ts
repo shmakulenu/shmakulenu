@@ -13,7 +13,7 @@ import { Sort } from '@angular/material';
 export class PatientsTableComponent implements OnInit {
   patients: Array<Patient>;
   //מערך המכיל את כותרות הטבלה
-  displayedColumns: Array<string> = [' תאריך-איינטיק ', ' קופ"ח ', ' עיר ', ' כתובת ', ' טלפון- 2 ', ' טלפון- 1 ', ' מין ', 'שם-משפחה', ' שם-פרטי ', ' תאריך-לידה ', ' תעודת-זהות '];
+  displayedColumns: Array<string> = [' תאריך-איינטיק ', ' קופ"ח ', ' עיר ', ' כתובת ', ' טלפון- 2 ', ' טלפון- 1 ', ' מין ', 'שם-משפחה', ' שם-פרטי ', ' תאריך-לידה ', ' תעודת-זהות ','פעולות'];
   constructor(private patientService: PatientsService, private router: Router, private userService: UsersService) { }
 
   ngOnInit() {
@@ -49,7 +49,7 @@ export class PatientsTableComponent implements OnInit {
   }
 
   onSelectPatient(Tz: number, statusId: number) {
-    this.router.navigate(["/student-ticket/" + Tz + "/" + statusId]);
+    this.router.navigate(["/menu/student-ticket/" + Tz + "/" + statusId]);
   }
 
   // מיון הטבלה לפי הכותרות

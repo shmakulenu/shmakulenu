@@ -1,4 +1,4 @@
-div.spinner{
+div.spinner {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -6,4 +6,5 @@ div.spinner{
     align-items: center;
     background-color: #0000002e;
     z-index: 1000;
+    justify-content: center;
 }

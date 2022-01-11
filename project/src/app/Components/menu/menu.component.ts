@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { ReadexcelService } from '../../Services/readexcel.service';
 import { SpinerService } from '../../Services/spiner.service';
+import { UsersService } from 'src/app/Services/users.service';
 
 @Component({
   selector: 'menu',
@@ -11,11 +12,16 @@ import { SpinerService } from '../../Services/spiner.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router:Router,private _location: Location,private excelService:ReadexcelService) { }
+  constructor(private usersService: UsersService,private router:Router,private _location: Location,private excelService:ReadexcelService) { }
 
   ngOnInit() {
   }
-  
+  checkIfManager() {
+    if (this.usersService.user.UserStatusName == "מנהל") {
+      return true;
+    }
+
+  }
   readAsapimFromExcel(){
 
     this.router.navigate(["/updatestudents"]);

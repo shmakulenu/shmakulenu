@@ -1,3 +1,15 @@
-div{
-    border-style: solid;
+table {
+    text-align: right;
+    direction: rtl;
+}
+
+table .mat-card-title span {
+    color: #ff4081;
+    background: transparent;
+    line-height: 20px;
+    margin-bottom: 20px
+}
+
+td {
+    padding: 8px;
 }

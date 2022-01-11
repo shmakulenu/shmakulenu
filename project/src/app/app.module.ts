@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   MatButtonModule,
@@ -102,6 +102,7 @@ import { UpdatestudentsComponent } from './Components/updatestudents/updatestude
     MatProgressSpinnerModule,
     MatSnackBarModule,
   ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [
     DialogComponent
   ],

@@ -21,11 +21,12 @@ export class RequestsTableComponent implements OnInit, OnDestroy {
   toogle1: boolean;
   toogle2: boolean;
   toogle3: boolean;
-
+  klinait = 0;
   constructor(private requestService: RequestService, private patientsService: PatientsService,
     private router: Router, private usersService: UsersService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe(p => {
       this.statusId = +p.get('statusId');
+      this.klinait = +p.get('klinait');
       if (this.statusId) {
         this.showTable(this.statusId);
       }
@@ -51,8 +52,23 @@ export class RequestsTableComponent implements OnInit, OnDestroy {
       this.toogle2 = false;
       this.toogle3 = true;
     }
+  //  this.displayedColumns = ['הערות', 'קופ"ח', 'עיר', 'כתובת', 'טל נייד', 'טלפון', 'תאריך לידה', 'תעודת זהות', 'שם', 'תאריך הפניה'];
+    // this.displayedColumns = [
+    //   'הערות'
 
-    this.displayedColumns = ['הערות', 'קופ"ח', 'עיר', 'כתובת', 'טל נייד', 'טלפון', 'תאריך לידה', 'תעודת זהות', 'שם', 'תאריך הפניה'];
+    // , 'קופ"ח'
+    // , 'עיר'
+    // , 'כתובת', 
+    // 'טל נייד',
+    //  'טלפון'
+    // , 'תאריך לידה',
+    //  'תעודת זהות'
+    //  , 'שם',
+    //  'תאריך הפניה'];
+     this.displayedColumns = ['תאריך הפניה','שם','תעודת זהות','תאריך לידה','טלפון',
+ 'טל נייד', 'כתובת', 'עיר' , 'קופ"ח','הערות','פעולות'
+
+     ];
     this.isShow = true;
     if (this.usersService.user.UserStatusName == "מנהל") {
       this.patientsService.GetAllPatientByStatus(statusId).subscribe(
@@ -79,11 +95,21 @@ export class RequestsTableComponent implements OnInit, OnDestroy {
   // }
 
   onSelectRequest(tz, statusId) {
+    if(this.klinait == 0)
+    {
+      this.router.navigate(["/menu/student-ticket/" + tz + "/" + statusId]);
+
+    }
+    else{
     this.router.navigate(["/student-ticket/" + tz + "/" + statusId]);
-  }
+  }}
 
   goToEmptyStudentTicket() {
-    this.router.navigate(["/student-ticket/"]);
+    if(this.klinait == 0)
+    { this.router.navigate(["/menu/student-ticket"]);}
+    else{
+    this.router.navigate(["/student-ticket" ]);
+  }
   }
   routeBack(){
     this.router.navigate(["/menu"]);

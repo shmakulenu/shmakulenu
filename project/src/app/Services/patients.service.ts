@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Patient } from '../Classes/patient';
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,7 @@ export class PatientsService {
           this.patients = data;
         },
         err => {
-          alert(err.message);
+          Swal.fire('',err.message,'error');
         }
       );
   }

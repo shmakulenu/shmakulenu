@@ -1,4 +1,3 @@
-
 <mat-card>
     <mat-card-title color="accent">
         <span>רשימת עובדים </span>
@@ -8,22 +7,27 @@
         <br>
         <input type="text" [(ngModel)]="express">
         <br>
-        <table class="table table-hover" matSort (matSortChange)="sortData($event)">
-            <tr>
-                <th *ngFor="let c of displayedColumns" [mat-sort-header]="c">
-                    {{c}}
-                </th>
-            </tr>
-            <tr *ngFor="let u of users | searchuser:express" (click)='onSelectUser(u.User_tz)'>
-                <td>{{u.User_tz}}</td>
-                <td>{{u.Password}}</td>
-                <td>{{u.User_name}}</td>
-                <td>{{u.Last_name}}</td>
-                <td>{{u.SnifId}}</td>
-                <td>{{u.UserStatusName}}</td>
-            </tr>
-        </table>
-        <button mat-raised-button color="accent" (click)="routeBack()">חזור</button>
+        <div class="table-wrapper">
+            <table class="table table-hover" matSort (matSortChange)="sortData($event)">
+                <tr>
+                    <th *ngFor="let c of displayedColumns" [mat-sort-header]="c">
+                        {{c}}
+                    </th>
+                </tr>
+                <tr *ngFor="let u of users | searchuser:express" (click)='onSelectUser(u.User_tz)'>
+                    <td>{{u.User_tz}}</td>
+                    <td>{{u.Password}}</td>
+                    <td>{{u.User_name}}</td>
+                    <td>{{u.Last_name}}</td>
+                    <td>{{u.SnifId}}</td>
+                    <td>{{u.UserStatusName}}</td>
+                    <td>
+                        <mat-icon (click)="onSelectUser(u.User_tz)" style="cursor: pointer;margin-left: 10px;">edit</mat-icon>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
 
     </mat-card-content>
 </mat-card>

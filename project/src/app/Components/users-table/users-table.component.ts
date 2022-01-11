@@ -4,6 +4,7 @@ import { Users } from '../../Classes/users';
 import { Location } from '@angular/common';
 import { Sort } from '@angular/material';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'users-table',
@@ -26,20 +27,20 @@ export class UsersTableComponent implements OnInit {
        data=>
        {
           this.users=data;
-          this.displayedColumns = ["תעודת זהות",	"סיסמה",	"שם פרטי",	"שם משפחה",	"קוד סניף",	"סטטוס"];
+          this.displayedColumns = ["תעודת זהות",	"סיסמה",	"שם פרטי",	"שם משפחה",	"קוד סניף",	"סטטוס",'פעולות'];
        },
        err=>
        {
-          alert(err.message);
+        Swal.fire('',err.message,'error');
        }
     );
   }
 
   onSelectUser(Tz: number){
     if (this.usersService.user.UserStatusName !== "מנהל") 
-      alert("you are not a manager and dont have a permission to update and add user");
+      Swal.fire('',"you are not a manager and dont have a permission to update and add user",'error');
     else
-      this.router.navigate(["/manager/" + Tz]);
+      this.router.navigate(["/menu/manager/" + Tz]);
   }
 
   routeBack() {

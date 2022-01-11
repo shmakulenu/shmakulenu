@@ -11,7 +11,7 @@ import { SnifimService } from '../../Services/snifim.service';
 import { KupatCholim } from 'src/app/Classes/kupatCholim';
 import { KupatcholimService } from 'src/app/Services/kupatcholim.service';
 import { MatSnackBar } from '@angular/material';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'student-ticket',
   templateUrl: './student-ticket.component.html',
@@ -34,7 +34,8 @@ export class StudentTicketComponent implements OnInit {
   attachFile: Array<string>;
   filePath:string = "";
   isNew: boolean = true;
-
+  file: File = null;
+  fileName1="";
   constructor(private fb: FormBuilder, private route: ActivatedRoute,
     private patientSer: PatientsService, private _location: Location, private router: Router,
     private cityServies: CitiesService, private snifimService: SnifimService,
@@ -58,7 +59,10 @@ export class StudentTicketComponent implements OnInit {
     this.getAllSnifim();
     this.getAllKuputCholim();
   }
-
+  onChange(event) {
+    this.file = event.target.files[0];
+    this.fileName1 = event.target.files[0].name;
+  }
   getAllKuputCholim(){
     this.kupatCholimServies.GetAllKuputCholim().subscribe(
       data => {
@@ -66,7 +70,8 @@ export class StudentTicketComponent implements OnInit {
         console.log(this.kupatCholim);
       },
       err => {
-        alert(err.message);
+        Swal.fire('Ooops',err.message,'error');
+       
       }
     )
   }
@@ -120,7 +125,7 @@ export class StudentTicketComponent implements OnInit {
   goToRequest(tz) {
     if (this.detailsForm.valid) {
       this.updateOrAddPatient();
-      this.router.navigate(["/request/" + tz]);
+      this.router.navigate(["/menu/request/" + tz+ "/0"]);
     }
     else
       this.detailsForm.markAllAsTouched();
@@ -140,7 +145,8 @@ export class StudentTicketComponent implements OnInit {
       this.patientSer.UpdatePatient(this.detailsForm.value).subscribe(
         data => {
           this.isSuccesfulUpdate = data;
-          this._snackBar.open('העדכון נשמר בהצלחה!', "", { duration: 1000})
+          Swal.fire('','השמירה בוצעה בהצלחה','success');
+        //  this._snackBar.open('העדכון נשמר בהצלחה!', "", { duration: 1000})
           // this.routeBack();
         },
         err => {
@@ -158,6 +164,7 @@ export class StudentTicketComponent implements OnInit {
       this.patientSer.AddPatient(this.detailsForm.value).subscribe(
         data => {
           this.isSuccesfulAdd = data;
+          Swal.fire('','השמירה בוצעה בהצלחה','success');
         },
         err => {
           // alert(err.message);
@@ -242,6 +249,8 @@ export class StudentTicketComponent implements OnInit {
   uploadFile(event: any) {
     if (event.target.files && event.target.files.length > 0) {
       let FileAsBase64 = ''
+      this.file = event.target.files[0];
+      this.fileName1 = event.target.files[0].name;
       const FileName = event.target.files[0].name
 
       // Use FileReader() object to get file to upload

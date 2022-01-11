@@ -16,30 +16,48 @@ import { UpdatestudentsComponent } from './Components/updatestudents/updatestude
 const routes: Routes =
   [
     { path: "login", component: LoginComponent },
-    { path: "users", component: UsersComponent },
+    // { path: "users", component: UsersComponent },
     { path: "manager", component: ManagerComponent },
     { path: "manager/:Tz", component: ManagerComponent },
     { path: "student-ticket/:Tz", component: StudentTicketComponent }, 
     { path: "userTable", component: UsersTableComponent },  
     { path: "menu", component: MenuComponent },  
     { path: "student-ticket", component: StudentTicketComponent }, 
-    { path: "student-ticket/:Tz/:statusId", component: StudentTicketComponent }, 
-    { path: "request/:tz", component: RequestComponent },   
     { path: "credistimplementation/:tz", component: CredistimplementationComponent },
     { path: "klinaits", component: KlinaitsComponent }, 
     { path: "credistimplementation", component: CredistimplementationComponent },  
     { path: "updatestudents", component: UpdatestudentsComponent },  
     { path: "requestsTable", component: RequestsTableComponent },
     { path: "patientsTable", component: PatientsTableComponent },
+    { path: "userTable", component: UsersTableComponent }, 
+    { path: "request/:tz/:klinait", component: RequestComponent },   
     { path: "menu", component: MenuComponent,
+    
       children:
         [
+          
           { path: "patientsTable", component: PatientsTableComponent },
           { path: "requestsTable", component: RequestsTableComponent },
-          { path: "requestsTable/:statusId", component: RequestsTableComponent },        
+          { path: "requestsTable/:statusId", component: RequestsTableComponent },  
+          { path: "manager", component: ManagerComponent },
+    { path: "manager/:Tz", component: ManagerComponent },
+    { path: "updatestudents", component: UpdatestudentsComponent },  
+    { path: "userTable", component: UsersTableComponent }, 
+    { path: "student-ticket", component: StudentTicketComponent }, 
+    { path: "student-ticket/:Tz/:statusId", component: StudentTicketComponent }, 
+    { path: "request/:tz/:klinait", component: RequestComponent },   
+    {
+      path: '',
+      outlet: 'requestsTable/1',
+      component: RequestsTableComponent,
+    },
+    {
+      path: '',
+      redirectTo:'requestsTable', pathMatch: 'full'
+    }
         ]
     },
-    { path: "userTable", component: UsersTableComponent },     
+       
   ];
 
 @NgModule({

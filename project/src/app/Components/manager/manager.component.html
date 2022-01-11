@@ -1,74 +1,78 @@
 <mat-card>
-        <mat-card-title>
-                <span> מנהל ברוך הבא </span>
-        </mat-card-title>
-        <mat-card-content>
-                <form [formGroup]="regiForm">
-                        <table>
-                                <tr>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input formControlName="User_name" matInput placeholder="שם פרטי">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!regiForm.get('User_name').valid && regiForm.get('User_name').touched"> בבקשה הכנס שם !!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input #lastNameId formControlName="Last_name" matInput placeholder="שם משפחה">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!regiForm.get('Last_name').valid && regiForm.get('Last_name').touched">בבקשה הכנס שם משפחה !!!</span>
-                                                </mat-error>
-                                        </td>
+    <mat-card-title>
+        <span> מנהל ברוך הבא </span>
+    </mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="regiForm">
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input formControlName="User_name" matInput placeholder="שם פרטי">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('User_name').valid && regiForm.get('User_name').touched"> בבקשה הכנס שם !!!</span>
+                        </mat-error>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input #lastNameId formControlName="Last_name" matInput placeholder="שם משפחה">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('Last_name').valid && regiForm.get('Last_name').touched">בבקשה הכנס שם משפחה !!!</span>
+                        </mat-error>
+                    </td>
 
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input #lastNameId formControlName="User_tz" matInput placeholder="תעודת זהות">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!regiForm.get('User_tz').valid && regiForm.get('User_tz').touched">בבקשה הכנס תעודת זהות !!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field>
-                                                        <mat-select formControlName="SnifId" placeholder="בחר סניף">
-                                                                <mat-option *ngFor="let s of snifim" [value]="s.SnifId">{{s.SnifName}}</mat-option>
-                                                        </mat-select>
-                                                        <mat-error>
-                                                                <span *ngIf="!regiForm.get('SnifId').valid && regiForm.get('SnifId').touched">Please select any item !!!</span>
-                                                        </mat-error>
-                                                </mat-form-field>
-                                        </td>
+                </tr>
+                <tr>
 
-                                </tr>
-                                <tr>
-                                        <td>
-                                                <span>סטטוס</span>
-                                                <br>
-                                                <mat-radio-group formControlName="StatusId">
-                                                        <mat-radio-button *ngFor="let u of userStatus" [value]="u.StatusId">{{u.Status_name}}</mat-radio-button>
-                                                </mat-radio-group>
-                                                <mat-error>
-                                                        <span *ngIf="!regiForm.get('StatusId').valid && regiForm.get('StatusId').touched">Please select any status !!!</span>
-                                                </mat-error>
-                                        </td>
-                                        <td>
-                                                <mat-form-field class="demo-full-width">
-                                                        <input type="number" formControlName="Password" matInput placeholder="סיסמה">
-                                                </mat-form-field>
-                                                <mat-error>
-                                                        <span *ngIf="!regiForm.get('Password').valid && regiForm.get('Password').touched">Please enter password !!!</span>
-                                                </mat-error>
-                                        </td>
-                                </tr>
+                    <td>
+                        <mat-form-field>
+                            <mat-select formControlName="SnifId" placeholder="בחר סניף">
+                                <mat-option *ngFor="let s of snifim" [value]="s.SnifId">{{s.SnifName}}</mat-option>
+                            </mat-select>
+                            <mat-error>
+                                <span *ngIf="!regiForm.get('SnifId').valid && regiForm.get('SnifId').touched">Please select any item !!!</span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input #lastNameId formControlName="User_tz" matInput placeholder="תעודת זהות">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('User_tz').valid && regiForm.get('User_tz').touched">בבקשה הכנס תעודת זהות !!!</span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
 
-                        </table>
-                        <button (click)="AddOrUpdateUser()" mat-raised-button color="accent">שמור</button>
-                </form>
-                <button mat-raised-button color="accent" (click)="routeBack()">חזור</button>
-        </mat-card-content>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input type="number" formControlName="Password" matInput placeholder="סיסמה">
+                        </mat-form-field>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('Password').valid && regiForm.get('Password').touched">Please enter password !!!</span>
+                        </mat-error>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+
+
+                        <mat-radio-group formControlName="StatusId" style="text-align: right;">
+                            <mat-radio-button *ngFor="let u of userStatus" [value]="u.StatusId">{{u.Status_name}}</mat-radio-button>
+                        </mat-radio-group>
+                        <mat-error>
+                            <span *ngIf="!regiForm.get('StatusId').valid && regiForm.get('StatusId').touched">Please select any status !!!</span>
+                        </mat-error>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button (click)="AddOrUpdateUser()" mat-raised-button color="accent">שמור</button>
+        </form>
+    </mat-card-content>
 </mat-card>
