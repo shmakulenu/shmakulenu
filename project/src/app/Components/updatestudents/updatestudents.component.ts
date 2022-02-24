@@ -28,7 +28,7 @@ export class UpdatestudentsComponent implements OnInit {
       this.loadingValue += 25;
       if(this.index < 4)
       {
-        this._snackBar.open(this.actions[this.index], "", { duration: 1000})
+        this._snackBar.open(this.actions[this.index], "", { duration: 1000,direction:'rtl'})
         this.index++;
       }
       else

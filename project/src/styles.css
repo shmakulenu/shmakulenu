@@ -795,11 +795,12 @@
         .custom-file-upload {
             border: 1px solid;
             display: inline-block;
-            padding: 4px 0px 0px 4px;
+            padding: 4px 10px 4px 4px;
+            margin-left: 10px;
             cursor: pointer;
             line-height: 20px;
             font-size: small;
-            width: 100px;
+            width: 100px;   
         }
         
         .custom-file-upload .mat-icon {
@@ -827,4 +828,10 @@
         .custom-file-upload-name-wrapper {
             max-width: 100px;
             display: inline-block;
+        }
+
+        .mat-progress-spinner circle,.mat-spinner circle{stroke:#ff4081}
+        .mat-progress-spinner.mat-accent circle,.mat-spinner.mat-accent circle{stroke:#ff4081}
+       .mat-simple-snackbar{
+            text-align: center!important;
         }
